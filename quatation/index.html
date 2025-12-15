@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quotation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="watermark">CFMA</div>
+
+<!-- HEADER (REPEATS ON ALL PAGES) -->
+<header>
+  <div class="header-box">
+    <img src="./logo1.jpg" class="logo">
+
+    <div class="header-center">
+      <h2>CLASSIC FOUNDRY MACHINERIES AND AUTOMATION</h2>
+      <p>
+        2/307 J, Auto Nagar, Kuttaiyur, Karamadai, Coimbatore – 641104<br>
+        GSTIN: 33AAUFC2552M1Z3<br>
+        info@classicfoundrymachineries.in | +91 81100 63887
+      </p>
+    </div>
+
+    <div class="header-right">
+      <p><b>Quote No:</b> CFMA25-26/SP0085</p>
+      <p><b>Date:</b> 01/08/2025</p>
+    </div>
+  </div>
+</header>
+
+<!-- FOOTER (REPEATS ON ALL PAGES) -->
+<footer>
+  MANUFACTURERS & SUPPLIERS OF ALL FOUNDRY EQUIPMENTS AND SPARES<br>
+  www.classicfoundrymachineries.in
+</footer>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <p><b>Kind Attn:</b><br>
+     Mubarak G. Shaikh<br>
+     New Melting Centre Pvt. Ltd<br>
+     Kolhapur
+  </p>
+
+  <p><b>Subject:</b> Quote for SBM Spares</p>
+
+  <p class="justify">
+    We wish to take this opportunity to thank you for allowing us to submit our
+    quotation for SBM spares. We hope that our proposal will be in line with your
+    requirement and we look forward to receiving your positive feedback.
+  </p>
+
+  <p class="justify">
+    Once again thank you very much for your interest on us and assuring our best
+    support always.
+  </p>
+
+  <div class="sign">
+    <p>Thanks & Regards,</p>
+    <b>CLASSIC FOUNDRY MACHINERIES AND AUTOMATION</b><br><br>
+    <i>Authorised Signatory</i>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <h3 class="center">QUOTE FOR SBM SPARES</h3>
+
+  <div class="form">
+    <input id="desc" placeholder="Description">
+    <input id="qty" type="number" placeholder="Qty">
+    <input id="price" type="number" placeholder="Unit Price">
+    <button onclick="addItem()">Add</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit Price (₹)</th>
+        <th>Amount (₹)</th>
+      </tr>
+    </thead>
+    <tbody id="items"></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4"><b>Sub Total</b></td>
+        <td id="subtotal">0</td>
+      </tr>
+      <tr>
+        <td colspan="4">GST 18%</td>
+        <td id="gst">0</td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Grand Total</b></td>
+        <td id="total"><b>0</b></td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  <h3>TERMS AND CONDITIONS</h3>
+
+  <table class="terms">
+    <tr><td>Delivery</td><td>6–7 Working Days</td></tr>
+    <tr><td>Payment</td><td>100% against Proforma Invoice</td></tr>
+    <tr><td>Packing & Forwarding</td><td>3% Extra</td></tr>
+    <tr><td>GST</td><td>18%</td></tr>
+    <tr><td>Transport</td><td>By Customer</td></tr>
+    <tr><td>Quote Validity</td><td>25 Days</td></tr>
+  </table>
+  <div class="sign">
+  <p>Thanks & Regards,</p>
+  <b>CLASSIC FOUNDRY MACHINERIES AND AUTOMATION</b><br><br>
+  <i>Authorised Signatory</i>
+</div>
+
+
+
+  <br>
+  <button onclick="window.print()">🖨 Generate PDF</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
